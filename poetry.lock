@@ -826,6 +826,17 @@ docs = ["myst-parser", "sphinx-autodoc-typehints", "sphinxcontrib-github-alt", "
 test = ["ipykernel", "pre-commit", "pytest", "pytest-cov", "pytest-timeout"]
 
 [[package]]
+name = "keras"
+version = "2.14.0"
+description = "Deep learning for humans."
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "keras-2.14.0-py3-none-any.whl", hash = "sha256:d7429d1d2131cc7eb1f2ea2ec330227c7d9d38dab3dfdf2e78defee4ecc43fcd"},
+    {file = "keras-2.14.0.tar.gz", hash = "sha256:22788bdbc86d9988794fe9703bb5205141da797c4faeeb59497c58c3d94d34ed"},
+]
+
+[[package]]
 name = "keyring"
 version = "24.2.0"
 description = "Store and access your passwords safely."
@@ -1082,10 +1093,7 @@ files = [
 ]
 
 [package.dependencies]
-numpy = [
-    {version = ">=1.23.2", markers = "python_version == \"3.11\""},
-    {version = ">=1.26.0", markers = "python_version >= \"3.12\""},
-]
+numpy = {version = ">=1.23.2", markers = "python_version == \"3.11\""}
 python-dateutil = ">=2.8.2"
 pytz = ">=2020.1"
 tzdata = ">=2022.1"
@@ -1869,6 +1877,17 @@ pure-eval = "*"
 tests = ["cython", "littleutils", "pygments", "pytest", "typeguard"]
 
 [[package]]
+name = "syllapy"
+version = "0.7.2"
+description = "Calculate syllable counts for English words."
+optional = false
+python-versions = ">=3.6, <4"
+files = [
+    {file = "syllapy-0.7.2-py3-none-any.whl", hash = "sha256:198a7413033c32d7b31e21962efb3f284bcea80d3346e954b938ca1ebe6bee20"},
+    {file = "syllapy-0.7.2.tar.gz", hash = "sha256:e55a7ad97d8b232e174b83f91b8f9be0c355d2a8e1208c7f6229055189605564"},
+]
+
+[[package]]
 name = "tenacity"
 version = "8.2.3"
 description = "Retry code until it succeeds"
@@ -2133,5 +2152,5 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 
 [metadata]
 lock-version = "2.0"
-python-versions = ">=3.11,<3.13"
-content-hash = "b46dcaec455332126c37db94eb2129ef30d0e537df4741428294f47a2885a217"
+python-versions = ">=3.11,<3.12"
+content-hash = "ff6be475745ecac0154ac34b6751f3811339bbfe62798b052c92786e207385a1"
