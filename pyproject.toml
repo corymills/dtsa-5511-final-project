@@ -33,6 +33,7 @@ tensorflow-io-gcs-filesystem = [
 ]
 transformers = "^4.34.0"
 tqdm = "^4.66.1"
+sentencepiece = "^0.1.99"
 
 
 [build-system]
